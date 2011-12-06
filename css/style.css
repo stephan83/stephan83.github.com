@@ -93,7 +93,7 @@ a {
 }
 
 #content {
-  width: 940px;
+  max-width: 940px;
   margin: 4em auto;
   text-align: justify;
 }
