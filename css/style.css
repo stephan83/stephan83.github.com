@@ -99,6 +99,7 @@ header {
   top: 0;
   width: 100%;
   border-bottom: solid 1px #800;
+  z-index: 32000;
 }
 
 header a {
