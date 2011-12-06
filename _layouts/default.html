@@ -2,10 +2,12 @@
 <html lang="en-EN">
 	<head>
 		<meta charset="UTF-8" />
-		<title>Stephan Florquin's blog</title>
+		<title>{{ page.title }} | Stephan Florquin's dev blog</title>
 		<link rel='stylesheet'  href='/css/style.css' type='text/css' media='all' />
-		<link href='http://fonts.googleapis.com/css?family=Rosario:400,400italic' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Poly:400,400italic' rel='stylesheet' type='text/css'>
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
 		<script type="text/javascript">
 
 		  var _gaq = _gaq || [];
@@ -23,7 +25,12 @@
 	<body>
 		<header>
 			<div>
-				<p id="logo"><a href="/">I ❤ node.js</a></p>
+				<nav>
+					<ul>
+						<li><a href="/about.html" title="About me">About me</a></li>
+					</ul>
+				</nav>
+				<p id="logo"><a href="/">I ❤ creating</a></p>
 			</div>
 		</header>
 
