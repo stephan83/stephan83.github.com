@@ -92,8 +92,29 @@ a {
   color: #b00;
 }
 
+header {
+  background: #b00;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: solid 1px #800;
+}
+
+header a {
+  width: 560px;
+  margin: 0 auto;
+}
+
+#logo a {
+  color: #fff;
+  font-size: 1.3em;
+  padding: .2em 0 .4em;
+  display: block;
+}
+
 #content {
-  max-width: 560px;
+  width: 560px;
   padding: 0 40px;
   margin: 4em auto;
   text-align: justify;
