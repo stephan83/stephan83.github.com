@@ -16,4 +16,4 @@ theme:
   homepage_posts: 10
 
   # Number of words to display in post summaries
-  summary_wordcount: 40
+  summary_wordcount: 20
