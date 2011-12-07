@@ -90,6 +90,14 @@ h2, a, #post h1, .page h1 {
   line-height: 1.2em;
 }
 
+em {
+  border-bottom: solid 1px #333;
+}
+
+#post h3, .page h3 {
+  margin-top: 2em;
+}
+
 .baseline {
   font-size: 1.2em;
   font-style: italic;
@@ -139,11 +147,29 @@ header nav {
   float: right;
 }
 
+header nav li {
+  float: left;
+}
+
 header nav a {
   text-transform: uppercase;
   font-size: .9em;
   display: block;
-  padding: .7em 0;
+  padding: .7em 0 .7em 1em;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+footer  {
+  width: 560px;
+  margin: 0 auto;
+  font-size: .8em;
+  font-style: italic;
+  color: #666;
+  text-align: center;
+  padding: .3em 0;
 }
 
 #content {
@@ -153,7 +179,7 @@ header nav a {
   text-align: justify;
 }
 
-#content p {
+#content p, #content ul, #content ol {
   margin-bottom: 1em;
 }
 
@@ -191,4 +217,18 @@ cite {
   font-size: 2.5em;
   bottom: -.7em;
   right: .2em;
+}
+
+#content ol {
+  list-style-type: decimal;
+  padding-left: 2em;
+}
+
+#comments {
+  margin-bottom: 1em;
+}
+
+.gist {
+  font: normal normal normal .6em Arial, DejaVuSansMono, Consolas, monospace;
+  margin-bottom: 1em;
 }

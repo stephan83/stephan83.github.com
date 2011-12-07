@@ -1,21 +1,14 @@
 ---
 layout: default
-title: node.js, RabbitMQ, and coding
+title: Home
 ---
 
 <div id="posts">
 
-	<h1>Welcome to Stephan Florquin's dev blog</h1>
+	{% include home.html %}
 
-	<p class="baseline">I love node.js, RabbitMQ, designing clever applications, and saving precious milliseconds...</p>
-
-  {% for post in site.posts offset: 0 limit: 10 %}
-		<article>
-    	<h3>{{ post.date | date_to_string }}</h3>
-	    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-		    <p>{{ post.content | strip_html | truncatewords: 40 }}</p>
-		    <p><a href="{{ post.url }}" class="more">Read more »</a></p>
-		</article>
+  {% for post in site.posts offset: 0 limit: site.theme.homepage_posts %}
+		{% include post_summary.html %}
   {% endfor %}
 
 </div>

@@ -1,1 +1,19 @@
 permalink: /:month-:day-:year/:title.html
+
+# Theme settings
+theme:
+
+  # Site name
+  site_name: I ❤ creating
+
+  # Google analytics UID
+  google_analytics_uid: UA-27533624-1
+
+  # Disqus shortname, for comments
+  disqus_shortname: stephan83
+
+  # Number of posts on homepage
+  homepage_posts: 10
+
+  # Number of words to display in post summaries
+  summary_wordcount: 40

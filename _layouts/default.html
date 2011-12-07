@@ -2,7 +2,7 @@
 <html lang="en-EN">
 	<head>
 		<meta charset="UTF-8" />
-		<title>{{ page.title }} | Stephan Florquin's dev blog</title>
+		<title>{{ page.title }} | {{ site.theme.site_name }}</title>
 		<link rel='stylesheet'  href='/css/style.css' type='text/css' media='all' />
 		<link href='http://fonts.googleapis.com/css?family=Poly:400,400italic' rel='stylesheet' type='text/css'>
 		<!--[if lt IE 9]>
@@ -11,7 +11,7 @@
 		<script type="text/javascript">
 
 		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', 'UA-27533624-1']);
+		  _gaq.push(['_setAccount', '{{ site.theme.google_analytics_uid }}']);
 		  _gaq.push(['_trackPageview']);
 
 		  (function() {
@@ -27,15 +27,22 @@
 			<div>
 				<nav>
 					<ul>
+						<li><a href="/archive.html" title="Archive">Archive</a></li>
 						<li><a href="/about.html" title="About me">About me</a></li>
 					</ul>
 				</nav>
-				<p id="logo"><a href="/">I ❤ creating</a></p>
+				<p id="logo"><a href="/" title="{{ site.theme.site_name }}">{{ site.theme.site_name }}</a></p>
 			</div>
 		</header>
 
 		<div id="content">
 		{{ content }}
 		</div>
+
+		<footer>
+			<p>Jerkyll theme by <a href="http://stephan83.github.com">Stephan Florquin</a></p>
+		</footer>
+
+		<a href="https://github.com/stephan83/stephan83.github.com"><img style="position: fixed; top: 0; left: 0; border: 0; z-index: 32001;" src="https://a248.e.akamai.net/assets.github.com/img/bec6c51521dcc8148146135149fe06a9cc737577/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub"></a>
 	</body>
 </html>
