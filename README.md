@@ -1,6 +1,6 @@
 # Stephan Florquin's Jekyll theme
 
-See http://localhost:4000/12-07-2011/use-this-theme-on-github.html for instructions.
+See [this post for instructions](http://stephan83.github.com/12-07-2011/use-this-theme-on-github.html).
 
 ## License
 
