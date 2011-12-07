@@ -42,6 +42,13 @@ The content of these pages are plain HTML fragments:
 
 <script src="https://gist.github.com/1442770.js?file=2011-12-07-my-first-post.md"> </script>
 
+### Running the site locally
+
+* install ruby
+* $ gem install jerkyll
+* $ jerkyll --server --auto
+* $ navigate to http://localhost://4000
+
 ### Hack and have fun
 
 Feel free to modify the theme and notify me if you make something nice with it.
