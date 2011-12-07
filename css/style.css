@@ -90,8 +90,9 @@ h2, a, #post h1, .page h1 {
   line-height: 1.2em;
 }
 
-em {
-  border-bottom: solid 1px #333;
+#content em {
+  text-decoration: underline;
+  font-style: italic;
 }
 
 #post h3, .page h3 {
