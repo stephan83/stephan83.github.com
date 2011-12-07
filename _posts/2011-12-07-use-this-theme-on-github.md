@@ -45,8 +45,8 @@ The content of these pages are plain HTML fragments:
 ### Running the site locally
 
 * install ruby
-* $ gem install jerkyll
-* $ jerkyll --server --auto
+* $ gem install jekyll
+* $ jekyll --server --auto
 * $ navigate to http://localhost://4000
 
 ### Hack and have fun
