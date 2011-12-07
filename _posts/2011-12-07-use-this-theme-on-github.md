@@ -4,7 +4,7 @@ title: Use this theme on github
 baseline: How to create your own blog on github using this Jekyll theme.
 ---
 
-If you have a github account, you can easily use this minimalist theme to create your own blog using these few steps.
+If you have a github account, you can easily use this minimalist theme to create your own blog by following these few steps.
 
 ### Fork the project
 
@@ -23,7 +23,7 @@ To get everything working properly, a few things need to be configured.
 
 *Example:*
 
-<script src="https://gist.github.com/1442661.js?file=_config.yml"></script>
+<script src="https://gist.github.com/1442661.js?file=_config.yml"> </script>
 
 ### Customize the home and about page
 
@@ -39,6 +39,8 @@ The content of these pages are plain HTML fragments:
 3. Push to github!
 
 *Example:*
+
+<script src="https://gist.github.com/1442770.js?file=2011-12-07-my-first-post.md"> </script>
 
 ### Hack and have fun
 
