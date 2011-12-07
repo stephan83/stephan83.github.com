@@ -27,7 +27,7 @@ To get everything working properly, a few things need to be configured.
 
 ### Customize the home and about page
 
-The content of these pages are plain HTML fragments:
+The contents of these pages are plain HTML fragments:
 
 1. \_includes/home.html
 2. \_includes/about_me.html
@@ -46,7 +46,7 @@ The content of these pages are plain HTML fragments:
 
 * install ruby
 * $ gem install jekyll
-* $ jekyll --server --auto
+* $ jekyll &dash;&dash;server &dash;&dash;auto
 * $ navigate to http://localhost://4000
 
 ### Hack and have fun
