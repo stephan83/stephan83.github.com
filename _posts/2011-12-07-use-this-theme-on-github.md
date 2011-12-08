@@ -2,6 +2,7 @@
 layout: post
 title: Use this theme on github
 baseline: How to create your own blog on github using this Jekyll theme.
+tags: [github, jekyll]
 ---
 
 If you have a github account, you can easily use this minimalist theme to create your own blog by following these few steps.

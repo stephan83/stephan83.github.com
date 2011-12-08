@@ -2,6 +2,7 @@
 layout: post
 title: Why should you use a non-relational database?
 baseline: I wrote this a while ago, I'm not sure if I still totally agree with everything I said.
+tags: [databases]
 ---
 
 Sometimes I hear people asking about what non-relational databases are and examples of what they can be used for. A common answer is that relational databases are not flexible enough / difficult to work with in some cases. I believe that non-relational databases are becoming increasingly popular not (only) because they offer more flexible ways to store data, but mostly because they can provide a performance boost.

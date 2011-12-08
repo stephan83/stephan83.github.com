@@ -2,6 +2,7 @@
 layout: post
 title: Jekyll on github
 baseline: A few hours, a text editor, and a github account.
+tags: [github, jekyll]
 ---
 
 Creating a blog with Jekyll and github is just too awesome. The power of git and the simplicity of markdown makes for a brilliant combo.
