@@ -152,7 +152,7 @@ header nav a {
   text-transform: uppercase;
   font-size: .9em;
   display: block;
-  padding: .5em 0 .5em 1em;
+  padding: .45em 0 .45em 1em;
 }
 
 header nav a:hover {
