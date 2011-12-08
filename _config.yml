@@ -12,8 +12,11 @@ theme:
   # Disqus shortname, for comments
   disqus_shortname: stephan83
 
-  # Number of posts on homepage
-  homepage_posts: 10
+  # Number of featured posts on homepage
+  homepage_featured: 1
+
+  # Number of posts on homepage (in addition to featured posts)
+  homepage_posts: 2
 
   # Number of words to display in post summaries
-  summary_wordcount: 20
+  featured_wordcount: 20

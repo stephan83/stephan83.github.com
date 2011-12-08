@@ -1,3 +1,6 @@
+/* =Reset
+-------------------------------------------------------------- */
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0b1 | 201101
    NOTE: WORK IN PROGRESS
@@ -61,6 +64,9 @@ table {
   border-spacing: 0;
 }
 
+/* =Generic HTML
+-------------------------------------------------------------- */
+
 body {
   font-family: 'Poly', serif;
   font-size: 20px;
@@ -68,55 +74,45 @@ body {
 }
 
 h1 {
-  font-size: 1.8em;
+  font-size: 2.4em;
+  text-decoration: none;
+  color: #b00;
   line-height: 1.2em;
-  margin-bottom: 1em;
+  margin-bottom: .6em;
 }
 
 h2 {
-  font-size: 2em;
-  margin-bottom: .9em;
+  font-size: 1.3em;
+  margin-bottom: .2em;
+  color: #333;
 }
 
 h3 {
   font-size: 1.3em;
-  margin-bottom: .5em;
-  color: #333;
+  margin: 2em 0 1em;
+  color: #b00;
 }
 
-h2, a, #post h1, .page h1 {
+a {
   text-decoration: none;
   color: #b00;
-  line-height: 1.2em;
 }
 
-#content em {
-  text-decoration: underline;
+blockquote {
   font-style: italic;
-}
-
-#post h3, .page h3 {
+  position: relative;
+  padding: 0 2em;
   margin-top: 2em;
 }
 
-.baseline {
-  font-size: 1.2em;
-  font-style: italic;
-  color: #222;
-  padding-bottom: 2em;
+cite {
+  margin-left: 1.9em;
+  font-size: .8em;
+  color: #666;
 }
 
-#post h2, .page h2 {
-  font-size: 1.3em;
-  margin-bottom: .5em;
-  color: #333;
-  color: #000;
-}
-
-#post h1, .page h1 {
-  font-size: 2em;
-  margin-bottom: .9em;
-}
+/* =Header
+-------------------------------------------------------------- */
 
 header {
   background: #b00;
@@ -133,15 +129,15 @@ header div {
   margin: 0 auto;
 }
 
-header a {
-  color: #fff;
-}
-
 #logo a {
   font-size: 1.3em;
   padding: .2em 0 .4em;
   display: block;
   float: left;
+}
+
+header a {
+  color: #fff;
 }
 
 header nav {
@@ -156,12 +152,15 @@ header nav a {
   text-transform: uppercase;
   font-size: .9em;
   display: block;
-  padding: .7em 0 .7em 1em;
+  padding: .5em 0 .5em 1em;
 }
 
 header nav a:hover {
   text-decoration: underline;
 }
+
+/* =Footer
+-------------------------------------------------------------- */
 
 footer  {
   width: 560px;
@@ -171,12 +170,16 @@ footer  {
   color: #666;
   text-align: center;
   padding: .3em 0;
+  clear: both;
 }
+
+/* =Content
+-------------------------------------------------------------- */
 
 #content {
   width: 560px;
   padding: 0 40px;
-  margin: 4em auto;
+  margin: 5em auto 3em;
   text-align: justify;
 }
 
@@ -184,29 +187,72 @@ footer  {
   margin-bottom: 1em;
 }
 
-article {
-  margin-bottom: 4em;
+#content em {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+#content ol {
+  list-style-type: decimal;
+  padding-left: 2em;
+}
+
+#content a:hover {
+  color: #000;
+}
+
+.baseline {
+  font-size: 1.2em;
+  font-style: italic;
+  color: #222;
+}
+
+/* =Featured
+-------------------------------------------------------------- */
+
+#featured article {
+  margin-bottom: 1em;
   text-align: left;
 }
 
-blockquote {
-  font-style: italic;
-  position: relative;
-  padding: 0 2em;
-  margin-top: 2em;
+/* =Posts
+-------------------------------------------------------------- */
+
+#posts {
+  margin-bottom: 1.5em;
+  line-height: 1.2em;
 }
+
+#posts dd {
+  margin-bottom: .7em;
+  padding-bottom: .7em;
+}
+
+/* =Home
+-------------------------------------------------------------- */
+
+#home {
+  text-align: left;
+}
+
+#home #posts {
+  width: 240px;
+  float: left;
+}
+
+#home #intro {
+  width: 240px;
+  float: right;
+}
+
+/* =Quotes
+-------------------------------------------------------------- */
 
 blockquote span {
   font-style: italic;
   color: #999;
   display: block;
   position: absolute;
-}
-
-cite {
-  margin-left: 1.9em;
-  font-size: .8em;
-  color: #666;
 }
 
 .open {
@@ -221,10 +267,8 @@ cite {
   right: .2em;
 }
 
-#content ol {
-  list-style-type: decimal;
-  padding-left: 2em;
-}
+/* =Gists
+-------------------------------------------------------------- */
 
 .gist {
   font: normal normal normal .6em Arial, DejaVuSansMono, Consolas, monospace;
