@@ -5,14 +5,20 @@ title: Home
 
 <div id="home">
 
+	<div id="intro">
+		{% include home.html %}
+	</div>
+
 	<div id="featured">
+		<h3>Latest</h3>
+
 		{% for post in site.posts offset: 0 limit: site.theme.homepage_featured %}
 			{% include post_featured.html %}
 		{% endfor %}
 	</div>
 
 	<div id="posts">
-		<h3>Older posts</h3>
+		<h3>Older thoughts</h3>
 
 		<dl>
 		  {% for post in site.posts offset: site.theme.homepage_featured limit: site.theme.homepage_posts %}
@@ -20,9 +26,5 @@ title: Home
 		  {% endfor %}
 		</dl>
 		<p><a href="/archive.html" class="more">View all posts »</a></p>
-	</div>
-
-	<div id="intro">
-		{% include home.html %}
 	</div>
 </div>

@@ -210,9 +210,12 @@ footer  {
 /* =Featured
 -------------------------------------------------------------- */
 
+#featured {
+  clear: both;
+}
+
 #featured article {
   margin-bottom: 1em;
-  text-align: left;
 }
 
 /* =Posts
@@ -233,6 +236,7 @@ footer  {
 
 #home {
   text-align: left;
+  background: url(/imgs/gears.png) no-repeat 0 20px;
 }
 
 #home #posts {
@@ -243,6 +247,7 @@ footer  {
 #home #intro {
   width: 240px;
   float: right;
+  margin-bottom: 1.4em;
 }
 
 /* =Quotes
