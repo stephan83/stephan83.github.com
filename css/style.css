@@ -279,3 +279,7 @@ blockquote span {
   font: normal normal normal .6em Arial, DejaVuSansMono, Consolas, monospace;
   margin-bottom: 1em;
 }
+
+.gist  pre {
+  font-size: 1em;
+}
