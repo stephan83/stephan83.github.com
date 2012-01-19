@@ -181,6 +181,7 @@ footer  {
   padding: 0 40px;
   margin: 5em auto 3em;
   text-align: justify;
+  -webkit-hyphens: auto; -moz-hyphens: auto; hyphens: auto;
 }
 
 #content p, #content ul, #content ol {
