@@ -1,0 +1,179 @@
+@import 'util.less';
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  .clear-fix;
+  .border-box;
+
+  @media only screen and (max-width: 959px) {
+    width: 640px;
+  }
+
+  @media only screen and (max-width: 639px) {
+    width: 320px;
+  }
+}
+
+.col {
+  float: left;
+  overflow: hidden;
+  .border-box;
+}
+
+.col320 {
+  .col;
+  width: 320px;
+}
+
+.col640 {
+  .col;
+  width: 640px;
+
+  @media only screen and (max-width: 639px) {
+    width: 320px;
+  }
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 100%;
+  z-index: 10;
+
+  nav {
+    .container;
+
+    ul {
+      list-style: none;
+    }
+
+    li {
+      float: right;
+    }
+
+    a {
+      display: block;
+      line-height: 1em;
+      height: 40px;
+      padding: 11px 20px;
+      .border-box;
+    }
+  }
+
+  .logo {
+    float: left;
+  }
+
+  @media only screen and (max-width: 959px) {
+    position: static;
+  }
+}
+
+.footer {
+  clear: both;
+  margin-top: 20px;
+
+  ol {
+    .container;
+    padding-bottom: 20px;
+  }
+
+  li {
+    float: left;
+    padding: 10px;
+    .col320;
+  }
+}
+
+.content {
+  padding-top: 70px;
+  clear: both;
+  .container;
+
+  @media only screen and (max-width: 959px) {
+    padding-top: 20px;
+  }
+
+  @media only screen and (max-width: 639px) {
+    padding-top: 0;
+  }
+}
+
+.featured-left {
+  position: relative;
+  .col640;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  h2 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #000;
+    background: rgba(0,0,0,.7);
+    color: #fff;
+    font-size: 2em;
+    padding: 20px;
+    max-width: 580px;
+
+    @media only screen and (max-width: 639px) {
+      font-size: 1em;
+      padding: 5px;
+      max-width: 310px;
+      max-width: 260px;
+    }
+  }
+}
+
+.featured-right {
+  .col320;
+
+  a {
+    display: block;
+    position: relative;
+    float: left;
+
+    &:after {
+      content: '';
+      background: #000;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 320px;
+      height: 240px;
+      .opacity(.5);
+    }
+
+    &:hover {
+      &:after {
+        .opacity(0);
+      }
+
+      h2 {
+        background: #000;
+        background: rgba(0,0,0,.7);
+      }
+    }
+  }
+
+  h2 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    font-size: 1em;
+    padding: 5px;
+    max-width: 310px;
+    z-index: 2;
+  }
+
+  @media only screen and (min-width: 640px) and (max-width: 959px) {
+    .col640;
+  }
+}

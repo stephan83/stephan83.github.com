@@ -2,6 +2,8 @@
 layout: post
 title: Client side templates
 baseline: Client side templates with browserify.
+image_640: http://placehold.it/640x480/eeeeee/999999
+image_320: http://placehold.it/320x240/eeeeee/999999
 tags: [coffee-script, template, browserify, node.js, eco]
 ---
 

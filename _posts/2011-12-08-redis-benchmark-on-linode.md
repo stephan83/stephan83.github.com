@@ -2,6 +2,8 @@
 layout: post
 title: Redis benchmark on Linode
 baseline: How does redis perform on Linode?
+image_640: http://placehold.it/640x480/eeeeee/999999
+image_320: http://placehold.it/320x240/eeeeee/999999
 tags: [databases]
 ---
 

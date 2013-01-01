@@ -4,7 +4,7 @@ permalink: /:month-:day-:year/:title.html
 theme:
 
   # Site name
-  site_name: I ❤ creating
+  site_name: Audacious
 
   # Google analytics UID
   google_analytics_uid: UA-27533624-1

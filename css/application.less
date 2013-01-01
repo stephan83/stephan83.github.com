@@ -1,0 +1,140 @@
+@import 'reset.less';
+@import 'normalize.less';
+@import 'util.less';
+@import 'typo.less';
+@import 'layout.less';
+@yellow: #f6eb14;
+
+body {
+  background: #fff;
+}
+
+a {
+  color: inherit;
+
+  &:hover {
+    background: @yellow;
+    text-decoration: none;
+  }
+}
+
+img {
+  display: block;
+}
+
+header {
+  background: #333;
+  .header;
+
+  li {
+    margin-left: 2px;
+  }
+
+  a {
+    background: #fff;
+    color: #000;
+
+    &:hover {
+      background: @yellow;
+    }
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+}
+
+footer {
+  .footer;
+
+  h3 {
+    border-bottom: dashed 1px #000;
+  }
+
+  ol {
+    border-bottom: solid 20px @yellow;
+  }
+}
+
+#logo {
+  .header > .logo;
+}
+
+#content {
+  .container;
+  .content;
+}
+
+#home-featured-left {
+  .featured-left;
+
+  a:hover {
+    h2 {
+      color: @yellow;
+    }
+  }
+}
+
+#home-featured-right {
+  .featured-right;
+
+  a:hover {
+    h2 {
+      color: @yellow;
+    }
+  }
+}
+
+#kind-words {
+  blockquote {
+    display: none;
+  }
+}
+
+#latest-posts, #latest-blog-posts {
+  a {
+    display: block;
+    padding: .8em 0;
+    border-bottom: dashed 1px #000;
+    text-decoration: none;
+  }
+}
+
+#post {
+  .col640;
+  margin-bottom: 40px;
+  padding-right: 10px;
+}
+
+#disqus_thread {
+  .col640;
+  padding-right: 10px;
+}
+
+aside {
+  padding-left: 30px;
+  margin-bottom: 30px;
+  .col320;
+
+  h3 {
+    border-bottom: dashed 1px #000;
+  }
+
+  @media only screen and (min-width: 640px) and (max-width: 959px) {
+    padding: 0 10px;
+  }
+}
+
+#social {
+  margin-top: 34px;
+  margin-bottom: 10px;
+
+  border: dashed 1px #000;
+  padding: 10px;
+}
+
+#twitter {
+  float: right;
+}
+
+

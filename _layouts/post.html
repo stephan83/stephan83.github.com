@@ -3,24 +3,30 @@ layout: default
 ---
 
 <div id="post">
-<h2>{{ page.date | date_to_string }}</h2>
-<h1>{{ page.title }}</h1>
-<p class="baseline">{{ page.baseline }}</p>
 
-{{ content }}
+  <h1>{{ page.title }}</h1>
 
-{{ if site.related_posts }}
-	<div id="posts">
-		<h3>See also...</h3>
-
-		{% for post in site.related_posts %}
-			{% include post_summary.html %}
-		{% endfor %}
-	</div>
-
-{{ endif }}
+  {{ content }}
 
 </div>
+
+<aside>
+  <div id="social">
+    <div id="twitter">
+      <a href="https://twitter.com/share" class="twitter-share-button" data-via="stephan83">Tweet</a>
+    </div>
+    <div id="facebook">
+      <div class="fb-like" data-send="true" data-layout="button_count" data-width="290" data-show-faces="false"></div>
+    </div>
+  </div>
+</aside>
+
+<aside id="latest-blog-posts">
+  <h3>Latest blog posts</h3>
+  {% for post in site.posts offset: 0 limit: 10 %}
+    <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+  {% endfor %}
+</aside>
 
 <div id="disqus_thread"></div>
 <script type="text/javascript">

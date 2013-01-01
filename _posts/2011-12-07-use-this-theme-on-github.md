@@ -2,6 +2,8 @@
 layout: post
 title: Use this theme on github
 baseline: How to create your own blog on github using this Jekyll theme.
+image_640: http://placehold.it/640x480/eeeeee/999999
+image_320: http://placehold.it/320x240/eeeeee/999999
 tags: [github, jekyll]
 ---
 

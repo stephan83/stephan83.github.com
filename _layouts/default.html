@@ -3,46 +3,57 @@
 	<head>
 		<meta charset="UTF-8" />
 		<title>{{ page.title }} | {{ site.theme.site_name }}</title>
-		<link rel='stylesheet'  href='/css/style.css' type='text/css' media='all' />
-		<link href='http://fonts.googleapis.com/css?family=Poly:400,400italic' rel='stylesheet' type='text/css'>
+		<link rel='stylesheet'  href='/css/application.css' type='text/css' media='all'>
+		<link href='http://fonts.googleapis.com/css?family=Muli:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
 		<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-		<script type="text/javascript">
-
-		  var _gaq = _gaq || [];
-		  _gaq.push(['_setAccount', '{{ site.theme.google_analytics_uid }}']);
-		  _gaq.push(['_trackPageview']);
-
-		  (function() {
-		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		  })();
-
-		</script>
 	</head>
 	<body>
+		<div id="fb-root"></div>
 		<header>
 			<div>
 				<nav>
 					<ul>
-						<li><a href="/archive.html" title="Archive">Archive</a></li>
-						<li><a href="/about.html" title="About me">About me</a></li>
+						<li id="logo"><a href="/" title="{{ site.theme.site_name }}">{{ site.theme.site_name }}</a></li>
+						<li><a href="/blog.html" title="Blog">Blog</a></li>
+						<li><a href="/projects.html" title="Projects">Projects</a></li>
 					</ul>
 				</nav>
-				<p id="logo"><a href="/" title="{{ site.theme.site_name }}">{{ site.theme.site_name }}</a></p>
 			</div>
 		</header>
 
 		<div id="content">
-		{{ content }}
+			{{ content }}
 		</div>
 
 		<footer>
-			<p>Jekyll theme by <a href="http://stephan83.github.com">Stephan Florquin</a></p>
+			<ol>
+				<li>
+					{% include about_me.html %}
+				</li>
+				<li id="latest-posts">
+					<h3>Latest posts</h3>
+					{% for post in site.posts offset: 0 limit: 5 %}
+						<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+					{% endfor %}
+				</li>
+				<li id="kind-words">
+					{% include kind_words.html %}
+				</li>
+			</ol>
 		</footer>
 
-		<div><a href="https://github.com/stephan83/stephan83.github.com"><img style="position: fixed; top: 0; left: 0; border: 0; z-index: 32001;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png" alt="Fork me on GitHub"></a></div>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="/js/application.js"></script>
+
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=246655315382943";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 	</body>
 </html>
