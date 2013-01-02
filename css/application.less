@@ -3,10 +3,12 @@
 @import 'util.less';
 @import 'typo.less';
 @import 'layout.less';
+
 @yellow: #f6eb14;
 
 body {
-  background: #fff;
+  background: #fafafa;
+  color: #444;
 }
 
 a {
@@ -31,16 +33,27 @@ header {
   }
 
   a {
-    background: #fff;
-    color: #000;
+    background: #fafafa;
+    color: #444;
 
     &:hover {
       background: @yellow;
     }
   }
+}
 
-  .logo {
-    margin-left: 0;
+#logo {
+  margin-left: 0;
+  width: 106px;
+
+  a, a:hover {
+    text-indent: -30000px;
+    background: transparent url(/imgs/logo.png) no-repeat left 4px;
+
+    @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (max--moz-device-pixel-ratio: 2) {
+      background-image: url('/imgs/logo_2x.png');
+      background-size: 105px 36px;
+    }
   }
 }
 
@@ -48,7 +61,7 @@ footer {
   .footer;
 
   h3 {
-    border-bottom: dashed 1px #000;
+    border-bottom: solid 1px #ddd;
   }
 
   ol {
@@ -94,9 +107,14 @@ footer {
 #latest-posts, #latest-blog-posts {
   a {
     display: block;
-    padding: .8em 0;
-    border-bottom: dashed 1px #000;
+    padding: .8em 20px .8em 0;
+    border-bottom: solid 1px #eee;
     text-decoration: none;
+
+    &:hover {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
 }
 
@@ -104,11 +122,19 @@ footer {
   .col640;
   margin-bottom: 40px;
   padding-right: 10px;
+
+  @media only screen and (max-width: 639px) {
+    padding-left: 10px;
+  }
 }
 
 #disqus_thread {
   .col640;
   padding-right: 10px;
+
+  @media only screen and (max-width: 639px) {
+    padding-left: 10px;
+  }
 }
 
 aside {
@@ -117,11 +143,16 @@ aside {
   .col320;
 
   h3 {
-    border-bottom: dashed 1px #000;
+    border-bottom: solid 1px #ddd;
   }
 
   @media only screen and (min-width: 640px) and (max-width: 959px) {
     padding: 0 10px;
+  }
+
+  @media only screen and (max-width: 639px) {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -129,8 +160,12 @@ aside {
   margin-top: 34px;
   margin-bottom: 10px;
 
-  border: dashed 1px #000;
+  border: solid 1px #ddd;
   padding: 10px;
+
+  @media only screen and (max-width: 639px) {
+    margin-top: 0;
+  }
 }
 
 #twitter {

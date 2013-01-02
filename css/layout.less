@@ -11,7 +11,7 @@
   }
 
   @media only screen and (max-width: 639px) {
-    width: 320px;
+    width: 100%;
   }
 }
 
@@ -24,6 +24,10 @@
 .col320 {
   .col;
   width: 320px;
+
+  @media only screen and (max-width: 639px) {
+    width: 100%;
+  }
 }
 
 .col640 {
@@ -31,7 +35,7 @@
   width: 640px;
 
   @media only screen and (max-width: 639px) {
-    width: 320px;
+    width: 100%;
   }
 }
 
@@ -134,10 +138,19 @@
 .featured-right {
   .col320;
 
+  img {
+    width: 100%;
+    height: auto;
+  }
+
   a {
     display: block;
     position: relative;
     float: left;
+
+    @media only screen and (min-width: 321px) and (max-width: 639px) {
+      width: 50%;
+    }
 
     &:after {
       content: '';
@@ -145,8 +158,8 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: 320px;
-      height: 240px;
+      width: 100%;
+      height: 100%;
       .opacity(.5);
     }
 
