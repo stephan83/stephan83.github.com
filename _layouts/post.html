@@ -9,7 +9,7 @@ layout: default
 
 {{ content }}
 
-{{ if site.related_posts }}
+{% if site.related_posts %}
 	<div id="posts">
 		<h3>See also...</h3>
 
@@ -18,7 +18,7 @@ layout: default
 		{% endfor %}
 	</div>
 
-{{ endif }}
+{% endif %}
 
 </div>
 
